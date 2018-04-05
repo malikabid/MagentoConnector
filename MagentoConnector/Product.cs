@@ -9,14 +9,14 @@ namespace MagentoConnector
 {
     class StockItem
     {
-       /* [JsonProperty("item_id")]
+        [JsonProperty("item_id")]
         public int ItemId { get; set; }
 
         [JsonProperty("product_id")]
         public int ProductId { get; set; }
 
         [JsonProperty("stock_id")]
-        public int StockId { get; set; }*/
+        public int StockId { get; set; }
 
         [JsonProperty("qty")]
         public int Qty { get; set; }
