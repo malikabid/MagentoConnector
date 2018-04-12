@@ -9,14 +9,14 @@ namespace MagentoConnector
 {
     class StockItem
     {
-        [JsonProperty("item_id")]
-        public int ItemId { get; set; }
+        //[JsonProperty("item_id")]
+        //public int ItemId { get; set; }
 
-        [JsonProperty("product_id")]
-        public int ProductId { get; set; }
+        //[JsonProperty("product_id")]
+        //public int ProductId { get; set; }
 
-        [JsonProperty("stock_id")]
-        public int StockId { get; set; }
+        //[JsonProperty("stock_id")]
+        //public int StockId { get; set; }
 
         [JsonProperty("qty")]
         public int Qty { get; set; }
@@ -51,20 +51,55 @@ namespace MagentoConnector
 
     class Product
     {
-        [JsonProperty("id")]
-        public int Id { get; set; }
+        //[JsonProperty("id")]
+        //public int Id { get; set; }
 
         [JsonProperty("sku")]
         public string Sku { get; set; }
 
+        [JsonProperty("price")]
+        public string Price { get; set; }
+
+        //[JsonProperty("name")]
+        //public string Name { get; set; }
+
+        //[JsonProperty("attribute_set_id")]
+        //public string AttributeSetId { get; set; }
+
+        //[JsonProperty("status")]
+        //public string Status { get; set; }
+
+        //[JsonProperty("weight")]
+        //public string Weight { get; set; }
+
+        //[JsonProperty("visibility")]
+        //public string Visibility { get; set; }
+
+        //[JsonProperty("type_id")]
+        //public string TypeId { get; set; }
+
+
+        //[JsonProperty("extension_attributes")]
+        //public ExtensionAttributes ExtensionAttributes { get; set; }
+
+        //[JsonProperty("custom_attributes")]
+        //public IList<CustomAttribute> CustomAttributes { get; set; }
+
+    }
+
+    class ExtendedProduct : Product
+    {
+        [JsonProperty("extension_attributes")]
+        public ExtensionAttributes ExtensionAttributes { get; set; }
+    }
+
+    class ExtendedFullProduct :ExtendedProduct
+    {
         [JsonProperty("name")]
         public string Name { get; set; }
 
         [JsonProperty("attribute_set_id")]
         public string AttributeSetId { get; set; }
-
-        [JsonProperty("price")]
-        public string Price { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
@@ -78,15 +113,11 @@ namespace MagentoConnector
         [JsonProperty("type_id")]
         public string TypeId { get; set; }
 
-
-        [JsonProperty("extension_attributes")]
-        public ExtensionAttributes ExtensionAttributes { get; set; }
-
         [JsonProperty("custom_attributes")]
         public IList<CustomAttribute> CustomAttributes { get; set; }
 
-    }
 
+    }
     class MageProduct
     {
         [JsonProperty("product")]

@@ -133,7 +133,7 @@ namespace MagentoConnector
         {
 
             var mageProduct = new MageProduct();
-            var product = new Product();
+            var product = new ExtendedProduct();
 
             var extensionAttributes = new ExtensionAttributes();
             var stockItem = new StockItem();
@@ -171,7 +171,7 @@ namespace MagentoConnector
 
 
             var mageProduct = new MageProduct();
-            var product = new Product();
+            var product = new ExtendedFullProduct();
 
             var suitable_car = new CustomAttribute();
             suitable_car.AttributeCode = "suitable_car";
