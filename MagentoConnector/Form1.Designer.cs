@@ -75,6 +75,7 @@
             this.txtPrice6 = new System.Windows.Forms.TextBox();
             this.txtName6 = new System.Windows.Forms.TextBox();
             this.txtSku6 = new System.Windows.Forms.TextBox();
+            this.txtToken = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -532,11 +533,19 @@
             this.txtSku6.TabIndex = 0;
             this.txtSku6.Text = "CSHARP001";
             // 
+            // txtToken
+            // 
+            this.txtToken.Location = new System.Drawing.Point(475, 41);
+            this.txtToken.Name = "txtToken";
+            this.txtToken.Size = new System.Drawing.Size(303, 20);
+            this.txtToken.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 767);
+            this.Controls.Add(this.txtToken);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -558,6 +567,7 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -610,6 +620,7 @@
         private System.Windows.Forms.TextBox txtPrice6;
         private System.Windows.Forms.TextBox txtName6;
         private System.Windows.Forms.TextBox txtSku6;
+        private System.Windows.Forms.TextBox txtToken;
     }
 }
 
